@@ -302,7 +302,7 @@ To use this package:
    dependencies:
      flutter:
        sdk: flutter
-     css_colors: ^1.0.0
+     css_colors: ^1.1.0
    ```
 
 1. Run `flutter pub get` in the terminal,
@@ -358,7 +358,7 @@ To use this plugin:
    dependencies:
      flutter:
        sdk: flutter
-     url_launcher: ^5.4.0
+     url_launcher: ^6.0.3
    ```
 
 1. Run `flutter pub get` in the terminal,
