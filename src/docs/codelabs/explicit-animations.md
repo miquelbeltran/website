@@ -113,8 +113,6 @@ and the second frame consists of the same ball
 placed further down on the screen using
 the top margin property.
 
-PENDING: # image: a frame in Flutter
-
 Even this though example doesn't use Flutter's
 animation library, it creates an animation
 in fundamentally the same way:
@@ -379,7 +377,7 @@ with AnimationController][] and by covering the
 The following example **begins with no animation code**&mdash;it
 consists of a [Material app][] home screen containing a green ball shape.
 
-PENDING: Insert DartPad here
+{% include explicit-animations/animation-controller-1.md %}
 
 This section provides guided steps for building
 the same bouncing ball animation
@@ -390,7 +388,7 @@ uses a naive approach in order to introduce
 fundamental animation concepts.
 
 
-PENDING : bouncing ball example
+PENDING : bouncing ball working final example
 
 
 Use the following instructions to create an explicit animation
