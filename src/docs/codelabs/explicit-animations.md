@@ -387,10 +387,6 @@ whereas the animation concepts section
 uses a naive approach in order to introduce
 fundamental animation concepts.
 
-
-PENDING : bouncing ball working final example
-
-
 Use the following instructions to create an explicit animation
 of a bouncing ball:
 
@@ -622,11 +618,11 @@ animation.
 
 #### The Animation object
 
-Lifecycle of an animation (completed, dismissed)
+Lifecycle of an animation:
 
 * An `Animation` has a `status` and a `value`.
 * The `value` depends on what the user wants,
-  and can be of any type, such as <Color> or <Size>.
+  and can be of any type, such as `Color or `Size`.
 * The controller's `status` has four possible
   values: dismissed, forward, reverse, and completed.
 
@@ -663,8 +659,6 @@ as well as the starting and ending values,
 Once instantiated, `AnimationController` creates an interpolated
 range of values between `upperBound` and `lowerBound`
 over the given `duration`.
-
-PENDING: Image of values in AnimationController
 
 In this example,
 the `AnimationController` constructor takes the
@@ -717,10 +711,6 @@ of the editor:
   in terms of its duration, and the starting and ending
   values of the property that you are animating:
 
-#### AnimationController doesn't know anything about the UI
-
-
-
 ##### Access animation values with controller.value
 
 `AnimationController` provides a `value` property.
@@ -740,12 +730,52 @@ the `value` property to a new value.
 
 ## Curves
 
+With the `AnimationController` you have been able to control a value
+over time between two bounds, the values in-between are calculated using
+**interpolation** as explained in the previous section.
+
+This interpolation is performed in a _linear_ way, meaning that rate
+at which this value changes over times is constant.
+
+In real life, moving objects don't have a constant movement, but
+accelerate, decelarete and bounce and different speeds. When you
+drop a ball, the ball will accelerate until hitting the floor, then
+will bounce back until it stops.
+
+Curves allow you to define the rate at which an animation value changes,
+simulating different effects like bouncing or decelartion.
+
+### What is a Curve?
+
+A curve is defined as a parametric animation easing curve, which maps an
+animation value to another value.
+
+They are also known as _easing curves_ and are used to adjust the rate
+of change of an animation over time, allowing them to speed up and slow
+down, rather than moving at a constant rate.
+
+In the following example, the bouncing ball example has been modified to
+use a bouncing curve:
+
+TODO: EXAMPLE HERE
+
+
+
+### Using Curves
+
 - Use CurvedAnimation
+
+### Create your own Curve
+
 - you can use presets, or create your own
 
 ## Tweens
 
+### What is a Tween?
+
 - To use a `Tween` call `animate()` passing in the controller. (example)
+
+### Using Tweens
 
 ## AnimatedBuilder
 
