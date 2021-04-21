@@ -757,8 +757,7 @@ down, rather than moving at a constant rate.
 In the following example, the bouncing ball example has been modified to
 use a bouncing curve:
 
-TODO: EXAMPLE HERE
-
+{% include explicit-animations/curves-final.md %}
 
 
 ### Using Curves
